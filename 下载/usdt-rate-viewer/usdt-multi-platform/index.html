@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USDT 多平台实时汇率</title>
+  <style>
+    body { font-family: sans-serif; padding: 1em; background: #f4f4f4; }
+    h1 { text-align: center; }
+    .platform-box { background: #fff; padding: 1em; margin-bottom: 1.5em; border-radius: 8px; box-shadow: 0 0 6px rgba(0,0,0,0.1); }
+    .rate-line { padding: 4px 0; border-bottom: 1px dashed #ccc; font-size: 15px; }
+    .rate-line span { display: inline-block; width: 120px; }
+  </style>
+</head>
+<body>
+  <h1>火币样式 USDT 汇率展示</h1>
+
+  <div class="platform-box">
+    <h2>火币 C2C 汇率 Top 10</h2>
+    <div id="huobi-rates">加载中...</div>
+  </div>
+
+  <div class="platform-box">
+    <h2>币安 C2C 汇率 Top 10</h2>
+    <div id="binance-rates">加载中...</div>
+  </div>
+
+  <div class="platform-box">
+    <h2>OKX C2C 汇率 Top 10</h2>
+    <div id="okx-rates">加载中...</div>
+  </div>
+
+  <script src="rates.js"></script>
+</body>
+</html>
