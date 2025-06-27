@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>USDT 实时汇率展示</title>
+  <style>
+    body { font-family: sans-serif; background: #f5f5f5; padding: 20px; }
+    h2 { margin-top: 1.2em; }
+    .buttons { margin-bottom: 15px; }
+    .buttons button { margin-right: 8px; padding: 6px 12px; }
+    .rate-list { white-space: pre-line; font-family: monospace; background: #fff; padding: 12px; border-radius: 6px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <h1>USDT 实时汇率展示</h1>
+
+  <h2>支付方式筛选</h2>
+  <div class="buttons">
+    <button onclick="filterRates('all')">所有</button>
+    <button onclick="filterRates('支付宝')">支付宝</button>
+    <button onclick="filterRates('微信')">微信</button>
+    <button onclick="filterRates('银行卡')">银行卡</button>
+  </div>
+
+  <div id="huobi-section">
+    <h2>火币 C2C 汇率</h2>
+    <div class="rate-list" id="huobi-list">加载中...</div>
+  </div>
+
+  <div id="binance-section">
+    <h2>币安 C2C 汇率</h2>
+    <div class="rate-list" id="binance-list">加载中...</div>
+  </div>
+
+  <div id="okx-section">
+    <h2>OKX C2C 汇率</h2>
+    <div class="rate-list" id="okx-list">加载中...</div>
+  </div>
+
+  <script src="rates.js"></script>
+</body>
+</html>
