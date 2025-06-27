@@ -1,0 +1,9 @@
+{
+  "name": "USDT 汇率工具",
+  "short_name": "汇率工具",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "展示 Binance、OKX、Huobi 的 USDT 买三卖三实时价格",
+  "icons": []
+}

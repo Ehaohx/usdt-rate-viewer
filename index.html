@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <title>实时汇率工具</title>
+</head>
+<body>
+  <h1>USDT 实时汇率展示</h1>
+  <div class="rate-box">
+    <h2>买入价格（第3档）</h2>
+    <ul>
+      <li>OKX: <span id="okx-buy">加载中...</span></li>
+      <li>Binance: <span id="binance-buy">加载中...</span></li>
+      <li>Huobi: <span id="huobi-buy">加载中...</span></li>
+    </ul>
+  </div>
+  <div class="rate-box">
+    <h2>卖出价格（第3档）</h2>
+    <ul>
+      <li>OKX: <span id="okx-sell">加载中...</span></li>
+      <li>Binance: <span id="binance-sell">加载中...</span></li>
+      <li>Huobi: <span id="huobi-sell">加载中...</span></li>
+    </ul>
+  </div>
+  <script src="data.js"></script>
+</body>
+</html>
