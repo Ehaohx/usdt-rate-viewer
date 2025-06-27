@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>USDT 汇率（OKX & Binance）</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: monospace; background: #f9f9f9; padding: 20px; }
+    .btns button { margin: 5px; padding: 6px 12px; font-size: 14px; }
+    .platform { margin-top: 20px; }
+    .data-box { background: #fff; padding: 10px; border: 1px solid #ccc; border-radius: 6px; white-space: pre-line; }
+    h2 { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>USDT 汇率（OKX + Binance）</h1>
+
+  <div class="btns">
+    <button onclick="filterData('all')">所有</button>
+    <button onclick="filterData('支付宝')">支付宝</button>
+    <button onclick="filterData('微信')">微信</button>
+    <button onclick="filterData('银行卡')">银行卡</button>
+    <button onclick="fetchData()">刷新</button>
+  </div>
+
+  <div class="platform">
+    <h2>Binance</h2>
+    <div id="binance" class="data-box">加载中...</div>
+  </div>
+
+  <div class="platform">
+    <h2>OKX</h2>
+    <div id="okx" class="data-box">加载中...</div>
+  </div>
+
+  <script src="rates.js"></script>
+</body>
+</html>
